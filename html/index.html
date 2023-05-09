@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba filtro</title>
+    <link rel="shortcut icon" href="/icon/2290148.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+          <img src="/img/logoWhite.png" alt="" width="300px" />
+          <h2 style="font-size: 3.5rem">Campus Airlines</h2>
+        </div>
+    </nav>
+
+      <br>
+
+       <section class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="/icon/2290148.png" class="logo"/>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Viaja</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestros destinos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mejores precios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tiquetes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">GOFORIN</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </section>
+
+      <header class="hero">
+        <section class="hero__container container">
+
+        </section>
+    </header>
+
+       
+    
+
+   <div class="ajuste container">
+        <section class="container about">
+            <div class="about__main">
+                <article class="about__icons">
+                    <form id="Modulo de clientes">
+                        <input type="text" name="numeroIdentificacion" placeholder="ingrese numero de indentificacion:"><br>
+                        <input type="text" name="Nombres" placeholder="ingrese sus nombres:"><br>
+                        <input type="text" name="apellidos" placeholder="ingrese sus apellidos:"><br>
+                        <input type="text" name="telefono"placeholder="ingrese su numero de telefono:"><br>
+                        <input type="text" name="fechanacimiento"placeholder="ingrese su fecha de nacimiento:"><br>
+                        <input type="text" name="ciudadorigen"placeholder="ingrese ciudad de origen:"><br>
+                        <input type="text" name="paisorigen" placeholder="ingrese su pais de origen: "><br>
+                        <input type="text" name="correoelectronico" placeholder="ingrese su correo electronico:"><br>
+                        <input type="submit" data-accion="GET" class="btn btn-outline-primary" value="Listar">
+                        <input type="submit" data-accion="POST"class="btn btn-outline-primary" value="Guardar">
+                        <input type="submit" data-accion="PUT" class="btn btn-outline-primary" value="Actualizar">
+                        <input type="submit" data-accion="DELETE" class="btn btn-outline-primary" value="Eliminar">
+                        <input type="submit" data-accion="SEARCH" class="btn btn-outline-primary" value="Buscar">
+                    </form>
+                </article>
+
+                <br><br>
+
+                <article class="about__icons">
+                    <form id="Modulo de rutas de aéreas">
+                            <input type="text" name="id" placeholder="ingrese su cedula"><br>
+                            <input type="text" name="Ruta" placeholder="ingrese nombre de la ruta:"><br>
+                            <input type="text" name="ciudadorigen"placeholder="ingrese su ciudad de origen:"><br>
+                            <input type="text" name="destino" placeholder="ingrese su cuidad de destino: "><br>
+                            <input type="text" name="totalmillas" placeholder="ingrese total de millas de la ruta:"><br>
+                            <input type="text" name="valormillas" placeholder="ingrese valor de millas por la ruta:"><br>
+                            <input type="submit" data-accion="GET" class="btn btn-outline-primary" value="Listar">
+                            <input type="submit" data-accion="POST"class="btn btn-outline-primary" value="Guardar">
+                            <input type="submit" data-accion="PUT" class="btn btn-outline-primary" value="Actualizar">
+                            <input type="submit" data-accion="DELETE" class="btn btn-outline-primary" value="Eliminar">
+                            <input type="submit" data-accion="SEARCH" class="btn btn-outline-primary" value="Buscar">
+                    </form>
+                </article>
+
+                <br><br>
+
+                <article class="about__icons">                    
+                    <form id="Modulo de flota aérea">
+                        <input type="text" name="numeroareonave" placeholder="ingrese numero de la aeronave:"><br>
+                        <input type="text" name="pasajeros" placeholder="ingrese su numero de pasajeros:"><br>
+                        <input type="text" name="fechadecompra" placeholder="ingrese su fecha de compra del boleto:"><br>
+                        <input type="text" name="valorcompra"placeholder="ingrese el valor de su boleto:"><br>
+                        <input type="text" name="matricula"placeholder="ingrese su numero de matricula:"><br>
+                        <input type="submit" data-accion="GET" class="btn btn-outline-primary" value="Listar">
+                        <input type="submit" data-accion="POST"class="btn btn-outline-primary" value="Guardar">
+                        <input type="submit" data-accion="PUT" class="btn btn-outline-primary" value="Actualizar">
+                        <input type="submit" data-accion="DELETE" class="btn btn-outline-primary" value="Eliminar">
+                        <input type="submit" data-accion="SEARCH" class="btn btn-outline-primary" value="Buscar">
+                    </form>
+                </article>
+
+                <br><br>
+
+                <article class="about__icons">  
+                    <form id="Modulo de compra de etiquetas">
+                        <input type="text" name="numeroareonave" placeholder="ingrese numero de la aeronave:"><br>
+                        <input type="text" name="pasajeros" placeholder="ingrese su numero de pasajeros:"><br>
+                        <input type="text" name="fechadecompra" placeholder="ingrese su fecha de compra del boleto:"><br>
+                        <input type="text" name="valorcompra"placeholder="ingrese el valor de su boleto:"><br>
+                        <input type="text" name="matricula"placeholder="ingrese su numero de matricula:"><br>
+                        <input type="submit" data-accion="GET" class="btn btn-outline-primary" value="Listar">
+                        <input type="submit" data-accion="POST"class="btn btn-outline-primary" value="Guardar">
+                        <input type="submit" data-accion="PUT" class="btn btn-outline-primary" value="Actualizar">
+                        <input type="submit" data-accion="DELETE" class="btn btn-outline-primary" value="Eliminar">
+                        <input type="submit" data-accion="SEARCH" class="btn btn-outline-primary" value="Buscar">
+                    </form> 
+                </article>    
+
+                <br><br>
+                <article class="about__icons">  
+                    <form id="Modulo de personal">
+                        <input type="text" name="numerodocumento" placeholder="ingrese numero de documento:"><br>
+                        <input type="text" name="Nombres" placeholder="ingrese su Nombre"><br>
+                        <input type="text" name="Apellidos" placeholder="ingrese sus apellidos"><br>
+                        <input type="text" name="Email"placeholder="ingrese su email"><br>
+                        <input type="text" name="celular"placeholder="ingrese su numero de celular:"><br>
+                        <input type="text" name="profesion"placeholder="ingrese su profesion :"><br>
+                        <input type="submit" data-accion="GET" class="btn btn-outline-primary" value="Listar">
+                        <input type="submit" data-accion="POST"class="btn btn-outline-primary" value="Guardar">
+                        <input type="submit" data-accion="PUT" class="btn btn-outline-primary" value="Actualizar">
+                        <input type="submit" data-accion="DELETE" class="btn btn-outline-primary" value="Eliminar">
+                        <input type="submit" data-accion="SEARCH" class="btn btn-outline-primary" value="Buscar">
+                    </form> 
+                </article>  
+            </div>
+        </section>  
+    </div>  
+
+    <br><br>
+
+    <section class="testimony">
+        <div class="testimony__container container">
+            <img src="/icon/leftarrow.svg"  class="testimony__arrow" id="before">
+
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testomony__texts">
+                    <h2 class="subtitle">Lugares bonitos a los cuales viajar <span 
+                    class="testimony__course">Conoce el mundo.</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                    esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
+                    blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="/img/axp-photography-UzBU0VC9_a8-unsplash.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body " data-id="2">
+                <div class="testomony__texts">
+                    <h2 class="subtitle">No tengas miedo a lo desconocido<span 
+                    class="testimony__course">Disfruta tu ambiente.</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                    esse, asperiores eaque totam nulla repudiandae blanditiis laborum veniam laboriosam saepe reiciendis dolorem.
+                    ratione voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="/img/jean-beller-WYqHPUMa_1M-unsplash.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body " data-id="3">
+                <div class="testomony__texts">
+                    <h2 class="subtitle">Hay un mundo por conocer<span 
+                    class="testimony__course">Sal con tus amigos y familia.</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                    esse, asperiores eaque totam nulla repudiandae blanditiis laborum veniam laboriosam saepe reiciendis dolorem.
+                    ratione voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="/img/axp-photography-icztgnBOdI8-unsplash.jpg" class="testimony__img">
+                </figure>
+            </section>
+            
+            <img src="/icon/right.svg"  class="testimony__arrow" id="next">
+        </div>
+    </section> 
+
+    <footer>Todos los derechos de autor reservados a Campus Airlines</footer>
+
+    <script src="/js/inicio.js"></script>
+    <script src="/js/slider.js"></script>
+</body>
+</html>
